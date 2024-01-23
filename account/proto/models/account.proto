@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package pb;
+
+import "google/protobuf/timestamp.proto";
+
+option go_package = "https://github.com/longIdt2502/pharmago-microservice/account/pb";
+
+message Account {
+  string username = 1;
+  string full_name = 2;
+  string email = 3;
+  int64 verify_id = 4;
+  google.protobuf.Timestamp password_changed_at = 5;
+  google.protobuf.Timestamp created_at = 6;
+}

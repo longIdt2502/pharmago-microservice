@@ -1,0 +1,14 @@
+syntax = "proto3";
+package pb;
+
+option go_package = "https://github.com/longIdt2502/pharmago-microservice/account/pb";
+
+message AccountInactiveRequest {
+  int32 id = 1;
+  bool status = 2;
+}
+
+message AccountInactiveResponse {
+  int32 code = 1;
+  string message = 2;
+}

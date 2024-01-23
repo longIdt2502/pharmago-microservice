@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package pb;
+
+import "models/account.proto";
+
+option go_package = "https://github.com/longIdt2502/pharmago-microservice/account/pb";
+
+message CreateAccountRequest {
+  string username = 1;
+  string password = 2;
+  string full_name = 3;
+  string email = 4;
+  string account_type = 5;
+}
+
+message CreateAccountResponse {
+  int32 code = 1;
+  string message = 2;
+  Account details = 3;
+  int32 verify_id = 4;
+}

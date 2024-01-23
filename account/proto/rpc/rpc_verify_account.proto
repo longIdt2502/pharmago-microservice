@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package = "https://github.com/longIdt2502/pharmago-microservice/account/pb";
+
+message VerifyAccountRequest {
+  int32 id_verify = 1;
+  string secret_code = 2;
+}
+
+message VerifyAccountResponse {
+  int32 code = 1;
+  string message = 2;
+  bool details = 3;
+}

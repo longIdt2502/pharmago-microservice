@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option go_package = "https://github.com/longIdt2502/pharmago-microservice/account/pb";
+
+package pb;
+
+service User {
+    
+}
